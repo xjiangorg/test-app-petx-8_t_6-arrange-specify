@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-ayou
+  namespace: build-e2e-wgup-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:6e988dedf0be760a5ef6f533f40f977d7387472f1cfc66a183df56a9de393acf
+        name: my-python
+        resources: {}
+status: {}
